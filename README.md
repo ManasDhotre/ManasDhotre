@@ -50,7 +50,7 @@ I turn raw data into decisions: finding out **why** something is happening and *
 ### 📊 Quick Commerce Platform Analysis
 **Business question:** How do quick-commerce platforms compare on revenue, customer experience and delivery, do discounts matter, and where should platforms expand?
 
-![KPI dashboard](https://raw.githubusercontent.com/ManasDhotre/quick-commerce-company-analysis/main/images/kpi_dashboard.png)
+![KPI dashboard](https://raw.githubusercontent.com/ManasDhotre/quick-commerce-company-analysis/main/sources/kpi_dashboard.png)
 
 | | |
 |---|---|
