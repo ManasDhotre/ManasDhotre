@@ -1,326 +1,137 @@
-# 👋 Hi, I'm Manas Dhotre
+# Manas Dhotre
 
-<h3 align="center">
-🚀 AI Engineer • Machine Learning Enthusiast • Data Analyst • Computer Science Student
-</h3>
+### Data Analyst · SQL · Python · Visualization · Machine Learning Enthusiast
 
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=700&lines=Artificial+Intelligence+Enthusiast;Machine+Learning+Developer;Data+Analytics+Explorer;Building+LLM+Powered+Applications;Always+Learning+Something+New" />
-</p>
+I turn raw data into decisions: finding out **why** something is happening and **what to do about it**. I analyze business datasets, build clear visualizations, and use machine learning where it genuinely helps answer the question.
 
-<p align="center">
+<!-- OPTIONAL: announce your role by uncommenting and editing the next line
+📌 Data Analyst @ <Company Name> · joining <Month Year>
+-->
 
-<a href="https://github.com/ManasDhotre">
-<img src="https://img.shields.io/github/followers/ManasDhotre?label=Followers&style=for-the-badge&logo=github"/>
-</a>
-
-<a href="https://github.com/ManasDhotre">
-<img src="https://komarev.com/ghpvc/?username=ManasDhotre&label=Profile+Views&style=for-the-badge&color=blue"/>
-</a>
-
-</p>
+| | |
+|---|---|
+| 🎯 **Focus** | Business and product analytics (quick commerce, food delivery, retail) |
+| 🛠 **Core tools** | SQL (MySQL, SQLite) · Python (pandas, NumPy) · Plotly · scikit-learn |
+| 🎓 **Education** | B.E. Computer Science Engineering, Punyashlok Ahilyadevi Holkar Solapur University (2023 to 2027) |
+| 📍 **Based in** | Pune, India |
+| 📫 **Contact** | [manasdhotre995@gmail.com](mailto:manasdhotre995@gmail.com) · [LinkedIn](https://www.linkedin.com/in/manas-dhotre) |
 
 ---
 
-# 👨‍💻 About Me
+## Impact snapshot
 
-🎓 Computer Science Engineering Student (2023–2027)
-
-🤖 Passionate about Artificial Intelligence, Machine Learning, Data Analytics, and Agentic AI Systems.
-
-📊 Experienced in analyzing **1M+ records**, building **LLM-powered applications**, and solving real-world business problems using data.
-
-💡 I enjoy transforming raw data into meaningful insights and creating intelligent applications that make people's work easier.
-
----
-
-# 🌐 Connect With Me
-
-<p align="center">
-
-<a href="mailto:manasdhotre995@gmail.com">
-<img src="https://skillicons.dev/icons?i=gmail"/>
-</a>
-
-<a href="https://linkedin.com/in/manasdhotre">
-<img src="https://skillicons.dev/icons?i=linkedin"/>
-</a>
-
-<a href="https://github.com/ManasDhotre">
-<img src="https://skillicons.dev/icons?i=github"/>
-</a>
-
-</p>
+- 📦 Analyzed **1,000,000 order records** (947,752 after cleaning) across **8 quick-commerce platforms** and **12 cities**
+- ❓ Answered **8 business questions** on revenue, order value, ratings, delivery speed, discounts and city expansion
+- 🧹 Cleaned messy data: dropped 52,000 rows with no city, imputed ratings group-wise, capped outliers above Rs. 2,500
+- 📈 Built a **KPI dashboard** (Rs. 541M total order value) and an interactive **Plotly efficiency chart**
+- 🧠 Built **LLM agents with long-term memory** during the Google/Kaggle 5-Day AI Agents Intensive
+- 🔬 Built **ML models** (regression, ensembles, deep learning) with proper evaluation (RMSE, R²)
 
 ---
 
-# 💻 Tech Stack
+## Skills in action
 
-## Programming Languages
-
-<p>
-
-<img src="https://skillicons.dev/icons?i=python"/>
-
-<img src="https://skillicons.dev/icons?i=mysql"/>
-
-</p>
-
----
-
-## AI & Machine Learning
-
-- Machine Learning
-- LLM Agents
-- Prompt Engineering
-- Memory Engineering
-- Context Engineering
-- Model Evaluation
+| Skill | Where I used it |
+|---|---|
+| Data cleaning and EDA | Quick Commerce Analysis (imputation, outlier capping, binning with `pd.cut`) |
+| Metric design (KPIs) | Efficiency score = scaled order volume − scaled delivery time |
+| Correlation and segment analysis | Delivery time vs. partner rating (r ≈ −0.003); discounted vs. non-discounted orders |
+| Data visualization | KPI dashboard, Plotly bubble chart, matplotlib/seaborn charts |
+| Business recommendations | Rule-based city expansion shortlist |
+| Predictive modelling | House Sales Prediction (Linear Regression vs. Random Forest) |
+| Deep learning | Blood clot detection with VGG-19 |
+| LLM agents and evaluation | Farming agent and Multi-Agent Diagnostic Assistant |
+| SQL analytics | 🚧 Food-delivery cancellation analysis (in progress, see below) |
 
 ---
 
-## Libraries
+## Featured analytics project
 
-<p>
+### 📊 Quick Commerce Platform Analysis
+**Business question:** How do quick-commerce platforms compare on revenue, customer experience and delivery, do discounts matter, and where should platforms expand?
 
-<img src="https://skillicons.dev/icons?i=python"/>
+![KPI dashboard](https://raw.githubusercontent.com/ManasDhotre/quick-commerce-company-analysis/main/images/kpi_dashboard.png)
 
-</p>
+| | |
+|---|---|
+| **Data** | Public quick-commerce orders dataset (course project): 1,000,000 raw orders across Amazon Now, Big Basket, Blinkit, Dunzo, Flipkart Minutes, Jio Mart, Swiggy Instamart and Zepto |
+| **Approach** | Cleaning and imputation → outlier capping → MinMax normalization → correlation and segment analysis → KPI dashboard |
+| **Output** | Platform scorecard, discount analysis, city expansion shortlist |
+| **Stack** | Python · Pandas · NumPy · Plotly · Matplotlib · Seaborn · scikit-learn |
 
-- Pandas
-- NumPy
-- Scikit-Learn
-- SciPy
-- Matplotlib
-- Seaborn
-- Plotly
+**What I found:**
+- **Swiggy Instamart leads on both revenue (Rs. 76.4M) and average order value (Rs. 645)**; Jio Mart is lowest on both (Rs. 57.1M, Rs. 483). Order counts are almost identical across platforms (about 118,000 each), so the revenue gap comes from **basket size, not volume**.
+- **Ratings differ more than expected:** Blinkit is highest (3.58) and Dunzo lowest (2.43). Dunzo is the second-fastest platform (14.2 min), so speed alone does not explain ratings.
+- **Delivery time has virtually no link to delivery-partner ratings** (correlation −0.003).
+- **Orders with a discount are 49.5% larger on average** (Rs. 712 vs. Rs. 476) with the same items per order (about 10.3), so discounts coincide with higher-value baskets, not more items.
+- **Expansion shortlist** (rating ≥ 3.5, delivery ≤ 15 min, above-median volume): Blinkit in Amritsar, Chennai, Gurgaon, Kolkata and Pune, and Zepto in Bengaluru.
 
----
-
-## Database
-
-- SQL
-- SQLite
-
----
-
-## Developer Tools
-
-<p>
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode,jupyter"/>
-
-</p>
+🔗 [Repository](https://github.com/ManasDhotre/quick-commerce-company-analysis)
 
 ---
 
-# 🚀 Featured Projects
+## 🚧 In progress
 
-## 🌾 Long-Memory Adaptive Farming Agent
-
-Built a Long-Memory AI Agent during the **Google/Kaggle 5-Day AI Agents Intensive**.
-
-### Highlights
-
-- Developed memory-aware AI recommendations.
-- Designed evaluation pipelines.
-- Implemented context retention across farming seasons.
-- Visualized season-over-season improvements.
-
-**Tech Stack**
-
-Python • LLM Agents • Memory Engineering • Data Visualization
+### Food-Delivery Cancellation and Delivery-Time Analysis
+**Business question:** Why do orders get cancelled, and which levers reduce cancellations and delays?
+**Stack:** SQL (CTEs, window functions) · Python · dashboard
+This is where my SQL work will live, with every query documented in the repo.
 
 ---
 
-## 📊 Quick Commerce Platform Analysis
+## Machine learning and AI projects
 
-Analyzed **1M+ order records** across:
-
-- Blinkit
-- Zepto
-- Swiggy Instamart
-- Dunzo
-- Flipkart Minutes
-- BigBasket Now
-
-### Key Achievements
-
-✔ Built Operational Efficiency Score
-
-✔ Compared six platforms
-
-✔ Correlation Analysis
-
-✔ Expansion Strategy
-
-✔ Discount vs Margin Analysis
-
-**Tech Stack**
-
-Python • Pandas • NumPy • Plotly • Scikit-Learn
-
-🔗 Repository
-
-https://github.com/ManasDhotre/quick-commerce-company-analysis
+| Project | What it does | Stack |
+|---|---|---|
+| 🏡 **House Sales Prediction** | Predicts house prices; Linear Regression vs. Random Forest, evaluated with RMSE and R² | Python · scikit-learn |
+| 🧬 **Multi-Agent Diagnostic Assistant** (team capstone) | I built the blood report (CBC) analysis agent within a multi-agent diagnostic workflow | Python · LLM agents |
+| 🩸 **Blood Clot Detection** | Image classification using VGG-19 | Python · Deep learning |
+| 🌾 **Long-Memory Adaptive Farming Agent** | Memory-aware agent that retains context across farming seasons; evaluation pipeline and season-over-season visualizations (Kaggle Kaggriculture capstone) | Python · LLM agents |
+| ✍️ **Prompt Master** | Rule-based tool that scores and improves prompts | Python |
 
 ---
 
-## 🤖 Prompt Master
+## How I approach a data problem
 
-Prompt Analysis & Improvement Tool
-
-Features
-
-- Prompt Quality Scoring
-- Prompt Correction
-- Learning-based Feedback
-- Rule-Based NLP Engine
-
-**Tech Stack**
-
-Python
+1. **Define the decision.** What will someone do differently because of this analysis?
+2. **Understand and clean the data.** Nulls, duplicates, outliers, and metric definitions.
+3. **Explore.** Segment, compare, and look for patterns before modelling.
+4. **Test and model.** Use statistics or ML only where they answer the question.
+5. **Communicate.** One clear chart, one clear recommendation, and honest limits.
 
 ---
 
-## 🏡 House Sales Prediction
+## Tech stack
 
-Machine Learning model for predicting house prices.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat&logo=plotly&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat)
+![Seaborn](https://img.shields.io/badge/Seaborn-4c72b0?style=flat)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
 
-### Models
-
-- Linear Regression
-- Random Forest
-
-Evaluation
-
-- RMSE
-- R² Score
-
----
-
-# 📊 GitHub Statistics
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=ManasDhotre&show_icons=true&theme=tokyonight"/>
-
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=ManasDhotre&theme=tokyonight"/>
-
-</p>
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ManasDhotre&layout=compact&theme=tokyonight"/>
-
-</p>
+**Currently learning:** advanced SQL (window functions, CTEs) · Tableau / Power BI · statistics and A/B testing
 
 ---
 
-# 📈 Contribution Graph
+## Certifications and languages
 
-<p align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ManasDhotre&theme=tokyo-night"/>
-
-</p>
+- **Certifications:** Data Analysis Bootcamp (Udemy) · Prompt Engineering (Udemy) · Git Version Control for Developers (Udemy)
+- **Languages:** Marathi (native) · Hindi (professional) · English (professional working) · Japanese (beginner)
 
 ---
 
-# 🏆 GitHub Trophies
+## Let's connect
 
-<p align="center">
+Happy to talk about data analytics, ML projects, or breaking into analytics roles.
 
-<img src="https://github-profile-trophy.vercel.app/?username=ManasDhotre&theme=algolia&margin-w=15&margin-h=15"/>
-
-</p>
-
----
-
-# 📚 Education
-
-🎓 **Bachelor of Engineering**
-
-Computer Science Engineering
-
-Punyashlok Ahilyadevi Holkar Solapur University
-
-2023 – 2027
-
----
-
-# 📜 Certifications
-
-🏅 Prompt Engineering Certification — Udemy
-
-🏅 Data Analysis Bootcamp — Udemy
-
-🏅 Git Version Control for Developers — Udemy
-
----
-
-# 📖 Currently Learning
-
-- Artificial Intelligence
-- Machine Learning
-- Agentic AI
-- Deep Learning
-- Data Engineering
-- System Design
-
----
-
-# 🎯 2026 Goals
-
-- 🚀 Build Production-Level AI Applications
-- 🌍 Contribute to Open Source
-- 📊 Become an Advanced Data Analyst
-- 🤖 Master LLM Engineering
-- ☁ Learn Cloud & MLOps
-
----
-
-# 🌍 Languages
-
-- 🇮🇳 Marathi (Native)
-- 🇮🇳 Hindi (Professional)
-- 🇬🇧 English (Professional Working)
-- 🇯🇵 Japanese (Beginner)
-
----
-
-# 📈 Coding Activity
-
-<p align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=ManasDhotre&theme=tokyonight"/>
-
-</p>
-
----
-
-# 🐍 Contribution Snake
-
-> **Note:** This animation requires a GitHub Action to generate the SVG.
-
-<p align="center">
-
-<img src="https://raw.githubusercontent.com/ManasDhotre/ManasDhotre/output/github-contribution-grid-snake.svg"/>
-
-</p>
-
----
-
-# 💡 Quote I Live By
-
-> *"The best way to predict the future is to build it."*
-
----
-
-<p align="center">
-
-### ⭐ Thanks for visiting my profile! ⭐
-
-If you like my work, consider giving a ⭐ to my repositories.
-
-</p>
+📫 [Email](mailto:manasdhotre995@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/manas-dhotre) · 🐙 [GitHub](https://github.com/ManasDhotre)
